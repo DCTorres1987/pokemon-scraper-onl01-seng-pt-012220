@@ -10,8 +10,7 @@ class Pokemon
     @type = type
     @hp = hp
     @db = db
-    @@all << 
-    binding.pry
+    @@all << self
   end
 
   def self.save(name, type, database_connection)
@@ -25,6 +24,7 @@ class Pokemon
     hp = pokemon[3]
 
     pokemon_inst = Pokemon.new(id: id, name: name, type: type, hp: hp, db: database_connection)
+    binding.pry
   end
 
   def alter_hp(new_hp, database_connection)
