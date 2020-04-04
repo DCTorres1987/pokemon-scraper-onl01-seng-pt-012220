@@ -6,7 +6,7 @@ class Pokemon
   
   @@all = []
   
-  def initialize(arguments)
+  def initialize(keywords)
     @id = arguments[:id]
     @name = arguments[:name]
     @type = arguments[:type]
