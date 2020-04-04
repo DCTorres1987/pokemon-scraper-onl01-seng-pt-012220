@@ -10,7 +10,8 @@ class Pokemon
     @type = type
     @hp = hp
     @db = db
-    @@all << self
+    @@all << 
+    binding.pry
   end
 
   def self.save(name, type, database_connection)
