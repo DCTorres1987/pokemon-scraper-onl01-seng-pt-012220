@@ -7,11 +7,7 @@ class Pokemon
   @@all = []
   
   def initialize(keywords)
-    @id = arguments[:id]
-    @name = arguments[:name]
-    @type = arguments[:type]
-    @db = arguments[:db]
-    @@all << self
+    
   end 
   
   def self.save(name, type, db)
